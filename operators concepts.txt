@@ -1,0 +1,134 @@
+c1) #include<stdio.h>
+int main(){
+    int a=10;
+    int b=(5>2)&&(a++);
+    printf("a=%d \tb=%d",a,b);
+    return 0;
+}
+
+c2) #include<stdio.h>
+int main(){
+    int a=10;
+    int b=(5>2)||(a++);
+    printf("a=%d \tb=%d",a,b);
+    return 0;
+}
+
+1. #include<stdio.h>
+int main(){
+    int a;
+    int b;
+    int c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    printf("The result of a+b*c is %d.",a+b*c);
+    return 0;
+}
+
+2.#include<stdio.h>
+int main(){
+    int a;
+    int b;
+    int c;
+    int d;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    d=(a>b)?[(a>c)?a:b]:[(b>c)?b:c]
+    printf("%d",d);
+    return 0;
+}
+
+
+3. #include<stdio.h>
+int main(){
+    int a;
+    int b;
+    printf("a =");
+    scanf("%d",&a);
+    printf("b =");
+    scanf("%d",&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("a = %d",a);
+    printf("\n");
+    printf("b = %d",b);
+}
+
+4. #include<stdio.h>
+int main(){
+    int x;
+    int y;
+    int z;
+    scanf("%d",&x);
+    scanf("%d",&y);
+    scanf("%d",&z);
+    printf("%d",x&&y&&z++);
+}
+
+5. #include<stdio.h>
+int main(){
+    int num,n;
+    scanf("%d",&n);
+    num=(n)*(n+1)/2;
+    printf("The sum of the first %d natural numbers is %d",n,num);
+}
+
+
+6. #include<stdio.h>
+int main(){
+    int num;
+    int team;
+    scanf("%d",&num);
+    scanf("%d",&team);
+    printf("The number of friends in each teams is %d and left out is %d",num/team,num%team);
+}
+
+
+7. #include<stdio.h>
+int main(){
+    int p,n,r;
+    float exd,in,total;
+    scanf("%d",&p);
+    scanf("%d",&r);
+    scanf("%d",&n);
+    in=p*n*r/100;
+    printf("%.2f",in);
+    total=p+in;
+    printf("  %.2f",total);
+    exd=in*2/100;
+    printf("  %.2f",exd);
+    printf("  %.2f",total-exd);
+}
+
+8. 
+
+9.
+
+10.#include<stdio.h>
+int main(){
+    int d1,c1,d2,c2,total;
+    scanf("%d",&d1);
+    scanf("%d",&c1);
+    scanf("%d",&d2);
+    scanf("%d",&c2);
+    total=(d1*100)+c1+(d2*100)+c2;
+    printf("%d",total/100);
+    printf(" %d",total%100);
+}
+
+11. #include<stdio.h>
+int main(){
+    int total,s1,s2,p1p,rem;
+    scanf("%d",&total);
+    scanf("%d",&s1);
+    scanf("%d",&s2);
+    printf("%d\t",(total*s1/100));
+    p1p=total-(total*s1/100);
+    printf("%d\t",(p1p*s2/100));
+    rem=p1p-(p1p*s2/100);
+    printf("%d",rem/3);
+}
+
